@@ -1,0 +1,53 @@
+/*=================
+    Section-4
+=================*/
+#grid-container-4 {
+    display: grid;
+    grid-template-columns: auto 65%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "text-container macaroon";
+    background-color: $light-gray;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 260px;
+    padding-bottom: 160px;
+}
+
+#text-container-4 {
+    grid-area: text-container;
+}
+
+#macaroon {
+    grid-area: macaroon;
+    background-image: url("/Users/kaylynngilbertgillespie/Documents/GitHub/FInal/deploy/img/section-4/4.png");
+    background-position: right;
+    background-size: cover;
+    margin-left: 10%;
+    
+}
+section {
+    h2 {
+    font-family:'Poppy', sans-serif;
+    font-size: rem-calc(42);
+    font-weight: 400;
+    margin-left: 10%;
+    
+    }
+
+    #body-text-4 {
+    font-family: 'Poppy', sans-serif;
+    font-size: rem-calc(16);
+    font-weight: 400;
+    margin-left: 30px;
+    margin-bottom: 260px;
+    line-height: rem-calc(26);
+    
+    }
+
+    .right-cap {
+    text-align: right;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: rem-calc(14);
+    }
+}

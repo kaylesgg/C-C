@@ -1,0 +1,39 @@
+/*================
+    Section-5
+=================*/
+#section-5 {
+    display: grid;
+    grid-template-columns: auto 65%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "text-container video";
+    background-color: $light-gray;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 260px;
+    padding-bottom: 160px;
+}
+
+#video {
+    grid-area: video;
+    margin-left: 40px;
+    grid-area: "video";
+    background-image: url("/Users/kaylynngilbertgillespie/Documents/GitHub/FInal/deploy/img/section-5/5-1.png");
+    background-size: cover;
+}
+#section-5 {
+    h2 {
+    font-family:'Poppy', sans-serif;
+    font-size: rem-calc(42);
+    font-weight: 400;
+    margin-left: 10%;
+    }
+    #rec{
+        margin-bottom: 390px;
+    }
+    .right-cap {
+    text-align: right;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: rem-calc(14);
+    }
+}

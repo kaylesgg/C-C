@@ -1,0 +1,80 @@
+/*=================
+    Section-1
+=================*/
+section {
+    margin-bottom: 0px;
+    
+    .cap {
+        font-family: 'Libre Baskerville', serif;
+        font-style: italic;
+        font-size: rem-calc(14);
+    }
+}
+
+
+#section-1 {
+     h2 {
+        font-family: 'Poppy', sans-serif;
+        font-size: rem-calc(42);
+        font-weight: 400;
+        margin-left: 10%;
+        margin-top: 0px;
+        
+        padding-top: 160px;
+
+    }
+    background-color: $light-gray;
+    padding: 0;
+    margin-top: 0;
+
+
+
+        .grid-container {
+            @include sm{
+                overflow: scroll;
+            }
+            @include md{
+                overflow: scroll;
+            }
+            
+            margin: 0;
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: 0.4fr 1fr 1fr 1fr 0.4fr;
+            grid-template-rows: auto 50px;
+            gap: 12px 20px;
+            grid-template-areas:
+                ". img-1 img-2 img-3 ."
+                ". cap-1 cap-2 cap-3 .";
+            justify-items: center;
+            padding-top: 25px;
+            p{
+                text-align: center;   
+            }
+        }
+
+        .img-1 {
+            grid-area: img-1;
+        }
+
+        .img-2 {
+            grid-area: img-2;
+        }
+
+        .img-3 {
+            grid-area: img-3;
+        }
+
+        .cap-1 {
+            grid-area: cap-1;
+        }
+
+        .cap-2 {
+            grid-area: cap-2;
+        }
+
+        .cap-3 {
+            grid-area: cap-3;
+        }
+    }
+

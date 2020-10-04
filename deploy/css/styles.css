@@ -9,7 +9,7 @@ html {
 /* =============
     Variables
 ============= */
-/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -29,6 +29,12 @@ html {
  */
 body {
   margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -338,6 +344,327 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  background-color: #EFEFEF;
+  background-image: url("/Users/kaylynngilbertgillespie/Documents/GitHub/FInal/deploy/img/header/cover.png");
+  background-position: center;
+  background-size: cover;
+  height: 460px; }
+  header #cover {
+    text-align: left;
+    margin: 160px 100px;
+    display: inline-block;
+    vertical-align: bottom; }
+    header #cover h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 5rem;
+      font-weight: 400;
+      color: #3A3939; }
+      @media (min-width: 0px) {
+        header #cover h1 {
+          font-size: 3.75rem; } }
+      @media (min-width: 768px) {
+        header #cover h1 {
+          font-size: 4.375rem; } }
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #EFEFEF;
+  display: grid;
+  grid-template-areas: ". footer .";
+  grid-template-columns: 10px auto 10px; }
+  footer > div {
+    grid-area: footer; }
+    footer > div h1 {
+      font-size: 1.25rem;
+      margin-bottom: 10px; }
+      footer > div h1 span {
+        color: #fff; }
+    footer > div ul {
+      display: flex;
+      justify-content: left;
+      list-style-type: none; }
+      footer > div ul .soc {
+        padding-right: 30px; }
+      footer > div ul li {
+        margin: 0 10px; }
+        footer > div ul li a:link,
+        footer > div ul li a:visited {
+          color: #000;
+          font-size: 1.875rem;
+          transition: 0.25s; }
+        footer > div ul li a:hover,
+        footer > div ul li a:active {
+          color: #fff; }
+
+/*================
+    Section-nav
+=================*/
+#navigation {
+  background-color: #EFEFEF;
+  text-decoration: none; }
+  #navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 80px;
+    overflow: hidden;
+    background-color: #EFEFEF; }
+  #navigation #burger-container {
+    align-items: right;
+    display: flex;
+    padding: 10px; }
+    @media (min-width: 992px) {
+      #navigation #burger-container {
+        display: none !important; } }
+  @media (min-width: 992px) {
+    #navigation #nav-container {
+      background-color: #fff;
+      display: block !important; } }
+  @media (min-width: 0px) {
+    #navigation #nav-container {
+      display: none; } }
+  @media (min-width: 768px) {
+    #navigation #nav-container {
+      display: none; } }
+  #navigation li a {
+    float: left;
+    cursor: pointer;
+    font-size: 2.5rem;
+    display: block;
+    color: #3A3939;
+    text-align: center;
+    padding: 20px 23px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.9375rem; }
+  #navigation li a:hover {
+    background-color: #B78686; }
+
+/*=================
+    Section-1
+=================*/
+section {
+  margin-bottom: 0px; }
+  section .cap {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 0.875rem; }
+
+#section-1 {
+  background-color: #EFEFEF;
+  padding: 0;
+  margin-top: 0; }
+  #section-1 h2 {
+    font-family: 'Poppy', sans-serif;
+    font-size: 2.625rem;
+    font-weight: 400;
+    margin-left: 10%;
+    margin-top: 0px;
+    padding-top: 160px; }
+  #section-1 .grid-container {
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 1fr 1fr 0.4fr;
+    grid-template-rows: auto 50px;
+    gap: 12px 20px;
+    grid-template-areas: ". img-1 img-2 img-3 ." ". cap-1 cap-2 cap-3 .";
+    justify-items: center;
+    padding-top: 25px; }
+    @media (min-width: 0px) {
+      #section-1 .grid-container {
+        overflow: scroll; } }
+    @media (min-width: 768px) {
+      #section-1 .grid-container {
+        overflow: scroll; } }
+    #section-1 .grid-container p {
+      text-align: center; }
+  #section-1 .img-1 {
+    grid-area: img-1; }
+  #section-1 .img-2 {
+    grid-area: img-2; }
+  #section-1 .img-3 {
+    grid-area: img-3; }
+  #section-1 .cap-1 {
+    grid-area: cap-1; }
+  #section-1 .cap-2 {
+    grid-area: cap-2; }
+  #section-1 .cap-3 {
+    grid-area: cap-3; }
+
+/*=================
+    Section-2
+=================*/
+#grid-container {
+  display: grid;
+  grid-template-columns: auto 65%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "text-container toast";
+  background-color: #EFEFEF;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 360px;
+  padding-bottom: 60px; }
+
+#text-container {
+  grid-area: text-container; }
+
+#toast {
+  grid-area: toast;
+  background-image: url("/Users/kaylynngilbertgillespie/Documents/GitHub/FInal/deploy/img/section-2/2.png");
+  background-position: right;
+  background-size: cover;
+  margin-left: 40px; }
+
+section h2 {
+  font-family: 'Poppy', sans-serif;
+  font-size: 2.625rem;
+  font-weight: 400;
+  margin-left: 10%; }
+
+section .body-text {
+  font-family: 'Poppy', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 30px;
+  margin-bottom: 230px;
+  line-height: 1.625rem;
+  min-width: 0px; }
+
+section .right-cap {
+  text-align: right; }
+
+/*=================
+    Section-3
+=================*/
+section {
+  margin-bottom: 0px; }
+  section .cap {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 0.875rem; }
+
+#section-3 {
+  background-color: #EFEFEF;
+  padding: 0;
+  margin-top: 0; }
+  #section-3 h2 {
+    font-family: 'Poppy', sans-serif;
+    font-size: 2.625rem;
+    font-weight: 400;
+    margin-left: 10%;
+    margin-top: 0px;
+    padding-top: 160px; }
+  #section-3 #grid-container {
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 1fr 1fr 0.4fr;
+    grid-template-rows: auto 50px;
+    gap: 12px 20px;
+    grid-template-areas: ". img-4 img-5 img-6 ." ". cap-4 cap-5 cap-6 .";
+    justify-items: center;
+    padding-top: 25px; }
+    @media (min-width: 0px) {
+      #section-3 #grid-container {
+        overflow: scroll; } }
+    @media (min-width: 768px) {
+      #section-3 #grid-container {
+        overflow: scroll; } }
+    #section-3 #grid-container p {
+      text-align: center; }
+  #section-3 .img-4 {
+    grid-area: img-4; }
+  #section-3 .img-5 {
+    grid-area: img-5; }
+  #section-3 .img-6 {
+    grid-area: img-6; }
+  #section-3 .cap-4 {
+    grid-area: cap-4; }
+  #section-3 .cap-5 {
+    grid-area: cap-5; }
+  #section-3 .cap-6 {
+    grid-area: cap-6; }
+
+/*=================
+    Section-4
+=================*/
+#grid-container-4 {
+  display: grid;
+  grid-template-columns: auto 65%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "text-container macaroon";
+  background-color: #EFEFEF;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 260px;
+  padding-bottom: 160px; }
+
+#text-container-4 {
+  grid-area: text-container; }
+
+#macaroon {
+  grid-area: macaroon;
+  background-image: url("/Users/kaylynngilbertgillespie/Documents/GitHub/FInal/deploy/img/section-4/4.png");
+  background-position: right;
+  background-size: cover;
+  margin-left: 10%; }
+
+section h2 {
+  font-family: 'Poppy', sans-serif;
+  font-size: 2.625rem;
+  font-weight: 400;
+  margin-left: 10%; }
+
+section #body-text-4 {
+  font-family: 'Poppy', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 30px;
+  margin-bottom: 260px;
+  line-height: 1.625rem; }
+
+section .right-cap {
+  text-align: right;
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  font-size: 0.875rem; }
+
+/*================
+    Section-5
+=================*/
+#section-5 {
+  display: grid;
+  grid-template-columns: auto 65%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "text-container video";
+  background-color: #EFEFEF;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 260px;
+  padding-bottom: 160px; }
+
+#video {
+  grid-area: video;
+  margin-left: 40px;
+  grid-area: "video";
+  background-image: url("/Users/kaylynngilbertgillespie/Documents/GitHub/FInal/deploy/img/section-5/5-1.png");
+  background-size: cover; }
+
+#section-5 h2 {
+  font-family: 'Poppy', sans-serif;
+  font-size: 2.625rem;
+  font-weight: 400;
+  margin-left: 10%; }
+
+#section-5 #rec {
+  margin-bottom: 390px; }
+
+#section-5 .right-cap {
+  text-align: right;
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  font-size: 0.875rem; }

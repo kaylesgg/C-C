@@ -1,0 +1,56 @@
+/*=================
+    Section-2
+=================*/
+
+    #grid-container {
+        display: grid;
+        grid-template-columns: auto 65%;
+        grid-template-rows: 1fr;
+        grid-template-areas: "text-container toast";
+        background-color: $light-gray;
+        margin: 0px;
+        padding: 0px;
+        padding-top: 360px;
+        padding-bottom: 60px;
+    }
+
+    #text-container {
+        grid-area: text-container;
+    }
+
+    #toast {
+        grid-area: toast;
+        background-image: url("/Users/kaylynngilbertgillespie/Documents/GitHub/FInal/deploy/img/section-2/2.png");
+        background-position: right;
+        background-size: cover;
+        margin-left: 40px;
+        
+    }
+section {
+    h2 {
+        font-family:'Poppy', sans-serif;
+        font-size: rem-calc(42);
+        font-weight: 400;
+        margin-left: 10%;
+        
+    }
+
+    .body-text {
+        font-family: 'Poppy', sans-serif;
+        font-size: rem-calc(16);
+        font-weight: 400;
+        margin-left: 30px;
+        margin-bottom: 230px;
+        line-height: rem-calc(26);
+        min-width: 0px;
+        
+
+
+        
+    }
+
+    .right-cap {
+        text-align: right;
+        
+    }
+}

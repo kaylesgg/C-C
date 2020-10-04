@@ -1,0 +1,56 @@
+/*================
+    Section-nav
+=================*/
+#navigation{
+    background-color: $light-gray;
+    text-decoration: none;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-left: 80px;
+        overflow: hidden;
+        background-color: $light-gray;
+      }
+      #burger-container {
+        align-items: right;
+        display: flex;
+        padding:10px;
+       
+        @include lg {
+            display: none !important;
+        }
+      }
+      #nav-container{
+        @include lg {
+          background-color: $white;
+          display: block !important;
+        }
+        @include sm{
+          display:none;
+
+        }
+        @include md{
+          display: none;
+        }
+      
+      }
+        li a {
+          float: left;
+          cursor: pointer;
+          font-size: rem-calc(40);
+          display: block;
+          color: $dark-gray;
+          text-align: center;
+          padding: 20px 23px;
+          text-decoration: none;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 400;
+          font-size: rem-calc(15);
+        }
+        
+        li a:hover {
+          background-color: $blush;
+      }
+
+  }
