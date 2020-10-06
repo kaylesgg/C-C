@@ -346,7 +346,7 @@ textarea {
 ============= */
 header {
   background-color: #EFEFEF;
-  background-image: url("/Users/kaylynngilbertgillespie/Documents/GitHub/FInal/deploy/img/header/cover.png");
+  background-image: url("../img/header/cover.png");
   background-position: center;
   background-size: cover;
   height: 460px; }
@@ -514,7 +514,7 @@ section {
 
 #toast {
   grid-area: toast;
-  background-image: url("/Users/kaylynngilbertgillespie/Documents/GitHub/FInal/deploy/img/section-2/2.png");
+  background-image: url("../img/section-2/2.png");
   background-position: right;
   background-size: cover;
   margin-left: 40px; }
@@ -608,7 +608,7 @@ section {
 
 #macaroon {
   grid-area: macaroon;
-  background-image: url("/Users/kaylynngilbertgillespie/Documents/GitHub/FInal/deploy/img/section-4/4.png");
+  background-image: url("../img/section-4/4.png");
   background-position: right;
   background-size: cover;
   margin-left: 10%; }
@@ -651,8 +651,9 @@ section .right-cap {
   grid-area: video;
   margin-left: 40px;
   grid-area: "video";
-  background-image: url("/Users/kaylynngilbertgillespie/Documents/GitHub/FInal/deploy/img/section-5/5-1.png");
-  background-size: cover; }
+  background-image: url("../img/section-5/5-1.png");
+  background-size: cover;
+  background-position: relative; }
 
 #section-5 h2 {
   font-family: 'Poppy', sans-serif;
