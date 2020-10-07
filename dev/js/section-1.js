@@ -10,7 +10,7 @@ snacksTL.from("#snacks",{duration:4, x:-500});
 
 export function snacksAnimation(){
     ScrollTrigger.create({
-        markers: true,
+        // markers: true,
         animation:  snacksTL,
         // toggleActions: "play none none none",
         trigger: "#snacks",

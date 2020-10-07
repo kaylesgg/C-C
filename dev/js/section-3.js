@@ -10,7 +10,7 @@ bitesTL.from("#bites",{duration:3.5, x:-500});
 
 export function bitesAnimation(){
     ScrollTrigger.create({
-        markers: true,
+        // markers: true,
         animation:  bitesTL,
         // toggleActions: "play none none none",
         trigger: "#bites",
