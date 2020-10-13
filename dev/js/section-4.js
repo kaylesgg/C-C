@@ -21,7 +21,7 @@ export function desAnimation(){
 }  
 const macTL = gsap.timeline();
 
-macTL.from("#macaroon",{duration:2, x:-80, alpha:.1});
+macTL.from("#macaroon",{duration:2, x:-80, alpha:.1, scale:2});
 
 export function macAnimation(){
     ScrollTrigger.create({
@@ -29,8 +29,8 @@ export function macAnimation(){
         animation:  macTL,
         // toggleActions: "play none none none",
         trigger: "#macaroon",
-        start:"top, 80%",
-        end: "bottom 60%",
+        start:"top, 100%",
+        end: "bottom 80%",
         scrub: 2
     });
 }  

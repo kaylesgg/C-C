@@ -30,12 +30,12 @@ videoTL.from("#video",{duration:2, x:-80, alpha:.1});
 
 export function videoAnimation(){
     ScrollTrigger.create({
-        // markers: true,
+        //    markers: true,
         animation:  videoTL,
         // toggleActions: "play none none none",
         trigger: "#video",
         start:"top, 80%",
-        end: "bottom 60%",
+        end: "bottom 50%",
         scrub: 2
     });
 }  

@@ -16,14 +16,14 @@ export function snacksAnimation(){
         trigger: "#snacks",
         start:"top, 100%",
         end: "bottom 50%",
-        scrub: 2
+        scrub: 3
     });
 }  
 const ImgTL = gsap.timeline();
 
 // gsap.set("#intro",{transformOrigin: "center"});
 
-ImgTL.from(".img",{duration:2, x:-80, alpha:0.1});
+ImgTL.from(".img",{duration:3, x:-80, alpha:0.1});
 
 export function imgAnimation(){
     ScrollTrigger.create({
@@ -33,6 +33,6 @@ export function imgAnimation(){
         trigger: ".img",
         start:"top, 100%",
         end: "bottom, 40%",
-        scrub: 2
+        scrub: 3
     });
 }

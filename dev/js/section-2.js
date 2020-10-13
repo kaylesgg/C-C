@@ -15,13 +15,13 @@ export function bbAnimation(){
         // toggleActions: "play none none none",
         trigger: "#bb",
         start:"top, 100%",
-        end: "bottom 60%",
+        end: "bottom 80%",
         scrub: 2
     });
 }  
 const toastTL = gsap.timeline();
 
-toastTL.from("#toast",{duration:2, x:-80, alpha:.1});
+toastTL.from("#toast",{duration:1, x:-80, alpha:.1,scale: 2.5});
 
 export function toastAnimation(){
     ScrollTrigger.create({
@@ -29,8 +29,8 @@ export function toastAnimation(){
         animation:  toastTL,
         // toggleActions: "play none none none",
         trigger: "#toast",
-        start:"top, 80%",
-        end: "bottom 60%",
-        scrub: 2
+        start:"top, 100%",
+        end: "bottom 80%",
+        scrub: 3
     });
 }  

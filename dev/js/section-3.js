@@ -14,7 +14,7 @@ export function bitesAnimation(){
         animation:  bitesTL,
         // toggleActions: "play none none none",
         trigger: "#bites",
-        start:"top, 80%",
+        start:"top, 70%",
         end: "bottom 60%",
         scrub: 2
     });
@@ -31,7 +31,7 @@ export function imgAnimation3(){
         animation: ImgTL3,
         // toggleActions: "play none none none",
         trigger: ".img3",
-        start:"top, 100%",
+        start:"top, 80%",
         end: "bottom, 30%",
         scrub: 2
     });
